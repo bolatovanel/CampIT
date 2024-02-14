@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products:</title>
+    <link rel="stylesheet" href="css/styles-3.css">
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="css/img/logg.png" alt="Логотип" width="50px" height="50px"></a>
+<p>Camp<span class="coloredsa">IT</span></p>     
+   </div>     
+
+       <nav>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index-2.html">О нас</a></li>
+            <li><a href="index-3.html">Курсы</a></li>
+            <li><a href="Index-4.html">Записаться</a></li>
+            <li><a href="index-3.html">+7(708)553-73-45</a></li>
+        </ul>
+       </nav>
+       <div class="social-icons">
+        <a href="https://www.instagram.com/it_camp_kzn/"><img src="css/img/inst.png" width="32" height="32"></a>
+        <a href="https://2gis.kz/astana/branches/70000001036709804/firm/70000001036709805/71.417882%2C51.090733"><img src="css/img/loc.png" width="32" height="32"></a>
+        
+        
+     </div>
+
+   </header>
+   <div style="text-align: center; font-style: oblique; font-size: 25px;">
+    <p>Можете ознакомиться с нашим продуктом</p>
+</div>
+
+    <main>
+        <section class="products">
+            <div class="product-row">
+                <div class="product">
+                    <h2>СОЗДАНИЕ ИГР</h2>
+                    <div class="product-image">
+                        <img src="css/img/gamesoz.jpg" width="500px" height="500px" alt="Планета 1">
+                    </div>
+                    <p class="price">Возраст:10-11лет</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-1')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+                </div>
+
+                <div class="product">
+                    <h2>2D АНИМАЦИЯ </h2>
+                    <div class="product-image">
+                        <img src="css/img/delaetanimation.png"width="500px" height="500px"  alt="Планета 2">
+                    </div>
+                    <p class="price">10-11лет</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-2')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <h2>ОСНОВЫ ПРОГРАММИРОВАНИЯ НА PYTHON </h2>
+                    <div class="product-image">
+                        <img src="css/img/python.jpg" width="500px" height="500px" alt="Планета 3">
+                    </div>
+                    <p class="price">11-14лет</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-3')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+                </div>
+
+                <div class="product">
+                    <h2>РОБОТОТЕХНИКА LEGO+ARDUINO</h2>
+                    <div class="product-image">
+                        <img src="css/img/rob.png" width="500px" height="500px" alt="Планета 4">
+                    </div>
+                    <p class="price">10-11лет</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-4')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <div class="product">
+                    <h2>BACK-END РАЗРАБОТКА</h2>
+                    <div class="product-image">
+                        <img src="css/img/bcend.jpg" width="500px" height="500px" "Планета 5">
+                    </div>
+                    <p class="price">12-14лет</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-5')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+                </div>
+
+                <div class="product">
+                    <h2>3D МОДЕЛИРОВАНИЕ</h2>
+                    <div class="product-image">
+                        <img src="css/img/model.jpg" width="500px" height="500px" alt="Планета 6">
+                    </div>
+                    <p class="price">1 ч.ж.</p>
+                    <button class="glow-on-hover" onclick="openModal('product-modal-6')">Подробнее</button>
+                    <button class="glow-on-hover buy-button" onclick="showAlert('Вы успешно записались!')">Записаться</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Модальные окна для описания товаров -->
+    <div id="product-modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('product-modal-1')">&times;</span>
+            <h2>Описание:</h2>
+            <strong>"Cоздание игр"</strong> Создай свою мобильную игру! Научимся создавать и загружать игры на мобильный телефон, учитывая все особенности. </ul>
+        </div>
+    </div>
+
+    <div id="product-modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('product-modal-2')">&times;</span>
+            <h2>Описание:</h2>
+            <strong>"2D Анимации"</strong>Создадим 2D анимацию на графическом планшете! В конце курса у нас будет короткометражный мультфильм, в котором мы продумаем свой сюжет и подберем подходящие звуковые эффекты</ul>
+        </div>
+    </div>
+
+    <div id="product-modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('product-modal-3')">&times;</span>
+            <h2>Описание:</h2>
+            <p><strong>"Основы python"</strong>Познакомимся с простыми алгоритмами, напишем оконное приложение “Список дел” при помощи модуля tkinter. Будем использовать модуль Turtle - нарисуем машину, дом, смайлик и тд.</div>
+    </div>
+
+    <div id="product-modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('product-modal-4')">&times;</span>
+            <h2>Описание:</h2>
+            <p><strong>"Робототехника"</strong>Познакомимся с робототехникой и узнаем об устройстве роботов. Научимся их собирать и программировать!</div>
+    </div>
+
+    <div id="product-modal-5" class="modal">
+        <div class="modal-content">
+            <h2>Описание:</h2>
+            <p><strong>"BACK-END разработка"</strong>Будем изучать технологии backend разработки, начиная от основ Python, заканчивая развертыванием приложений. Рассмотрим концепции ООП, шаблоны, модели, представления, CRUD, Git и создадим полноценное веб-приложение.</p>
+        </div>
+        <div class="modal-buttons">
+            <span class="close" onclick="closeModal('product-modal-5')">&times;</span>
+            <!-- Другие кнопки, если необходимо -->
+        </div>
+    </div>
+    
+    <div id="product-modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('product-modal-6')">&times;</span>
+            <h2>Описание:</h2>
+            <p><strong>3D-моделирование</strong>Познакомимся с возможностями скульптинга в виртуальной реальности. Распечатаем готовую скульптуру на 3D - принтере. Сами создадим рендер своей сцены!</div>
+    </div>
+
+        <!-- Кнопка вверх -->
+        <button id="scrollToTopButton" onclick="scrollToTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg>          </button>
+
+</div>
+    <footer>
+        <p>&copy; Enjoy.</p>
+    </footer>
+
+    <script>
+        // Function to open a modal by ID
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+// Function to close a modal by ID
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+document.addEventListener("DOMContentLoaded", function () {
+    // Attach event listeners to "Подробнее" buttons
+    const detailButtons = document.querySelectorAll(".glow-on-hover");
+    detailButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const modalId = this.getAttribute("data-modal-id");
+            openModal(modalId);
+        });
+    });
+
+    // Attach event listeners to close buttons (e.g., the "x" icon)
+    const closeButtons = document.querySelectorAll(".close");
+    closeButtons.forEach(function (closeButton) {
+        closeButton.addEventListener("click", function () {
+            const modalId = this.getAttribute("data-modal-id");
+            closeModal(modalId);
+        });
+    });
+});
+
+
+// Функция для отображения алерта
+function showAlert(message) {
+    alert(message);
+}
+
+                const header = document.querySelector('header');
+        let lastScroll = 0;
+
+        window.onscroll = function() {
+    var button = document.getElementById('scrollToTopButton');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      button.style.display = 'block';
+    } else {
+      button.style.display = 'none';
+    }
+  };
+  
+  // Плавная анимация прокрутки страницы вверх при клике на кнопку
+  document.getElementById('scrollToTopButton').addEventListener('click', function() {
+    scrollToTop();
+  });
+  
+  function scrollToTop() {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, currentScroll - currentScroll / 8); // Здесь можно настроить скорость анимации, уменьшив или увеличив шаг деления
+    }
+  }
+  
+    </script>
+</body>
+</html>
